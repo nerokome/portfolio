@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <body className= 
       {`${geistSans.variable} ${geistMono.variable}
        className='h-full min-h-screen
-    bg-[url("/word.jpg")]
+    bg-[url("/dark.jpg")]
       bg-cover bg-center bg-fixed '`}>
         {children}
       </body>
