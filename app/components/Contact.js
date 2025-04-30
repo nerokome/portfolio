@@ -21,7 +21,7 @@ return (
             <a href="https://www.linkedin.com/in/oghenero-oghenekome-997360259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
                     <img className='w-[50px] h-[50px] 
                             rounded-full mt-20
-                             sm: flex justify-center items-center' src="/Li.png" alt="LinkedIn" />
+                             sm: flex justify-center items-center' src="/linn.png" alt="LinkedIn" />
             </a>
             <a href="mailto:nerooghenekome@gmail.com">
                     <img className='w-[50px] h-[50px] 
