@@ -16,7 +16,7 @@ return (
         <section className='flex items-center justify-center'>
             <Heading title="Skills" />
         </section>
-        <div className='grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 px-10 gap-6 animate-pulse'>
+        <div className='grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 px-10 gap-6 animate-pulse justify-center'>
             <div className='shadow-lg flex flex-col gap-4 px-10 py-8 animate-pulse'>
                 <FaFlutter className='text-blue-500' style={{ fontSize: '3rem' }} />
             </div>
