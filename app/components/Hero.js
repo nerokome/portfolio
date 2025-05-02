@@ -18,8 +18,8 @@ const Hero = () => {
                     />
                 </div>
                 <div className=''>
-                    <h1 className='text-5xl'>I'm Nero </h1>
-                    <h4 className='text-4xl mt-3 text-purple-300 '>
+                    <h1 className='text-2xl'>I'm Nero </h1>
+                    <h4 className='text-2xl mt-3 text-purple-300 '>
                       <Typewriter
                         options={{
                           strings: [

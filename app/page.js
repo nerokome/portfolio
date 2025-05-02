@@ -28,8 +28,8 @@ export default function Home() {
         <div className=''>
           <Hero/>
           <About/>
-          <Skills/>
           <Projects/>
+          <Skills/>
           <Contact/>
         </div>
       </main>
