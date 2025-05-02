@@ -10,7 +10,7 @@ const Navbar = () => {
  
    setNavOpen(!navOpen);
   };
-  const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false });
+ 
 
 return (
    <div className={`left-0 top-0 w-full z-10 ease-in-out duration-300 ${navOpen ? 'h-screen overflow-hidden' : ''}`}>
