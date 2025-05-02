@@ -12,7 +12,7 @@ const Hero = () => {
             <div className='max-w-[450px] text-white flex flex-col gap-[40px] items-center lg:items-start'>
                 <div className='inline-block align-middle'>
                     <img 
-                        className='w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] rounded-full border-5 border-purple-500 mt-20 sm:flex justify-center items-center'  
+                        className='w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] rounded-full border-5 border-slate-500 mt-20 sm:flex justify-center items-center'  
                         src="/vaga.png" 
                         alt="Round image"
                     />

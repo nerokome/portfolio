@@ -16,7 +16,7 @@ return (
    <div className={`left-0 top-0 w-full z-10 ease-in-out duration-300 ${navOpen ? 'h-screen overflow-hidden' : ''}`}>
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 ease-in-out duration-300'>
           <Link href= '/'>
-          <h1 className='text-4xl text-gray-400 ease-in-out duration-300'>Nero Oghenekome</h1>
+          <h1 className='text-2xl text-gray-400 ease-in-out duration-300 sm:text-4xl'>Nero Oghenekome</h1>
           </Link>
           <ul className='hidden sm:flex ease-in-out duration-300'>
                <li>
