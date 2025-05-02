@@ -32,7 +32,7 @@ return (
                         <a href="mailto:nerooghenekome@gmail.com">
                                         <img className='w-[50px] h-[50px] rounded-full' src="/email.png" alt="Email" />
                                 </a>
-                                <h2 className='text-xl text-amber-50 font-mono '>nerooghenekome@gmail.com</h2>
+                                <h2 className='text-xl text-amber-50 font-mono '>nerooghenekome@gmail</h2>
 
                         </div>
                 </div>
