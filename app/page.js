@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div
       className='h-full min-h-screen
-      bg-[url("/dark.jpg")]
+      bg-black
       bg-cover bg-center bg-fixed relative  scroll-smooth'>
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <Head>
