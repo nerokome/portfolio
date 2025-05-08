@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className='inline-block align-middle'>
                     <img 
                         className='w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] rounded-full border-5 border-slate-500 mt-20 sm:flex justify-center items-center'  
-                        src="/vaga.png" 
+                        src="/Nero.jpg" 
                         alt="Round image"
                     />
                 </div>
