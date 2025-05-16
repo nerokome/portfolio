@@ -14,95 +14,120 @@ const Navbar = () => {
 
 return (
    <div className={`left-0 top-0 w-full z-10 ease-in-out duration-300 ${navOpen ? 'h-screen overflow-hidden' : ''}`}>
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 ease-in-out duration-300'>
-          <Link href= '/'>
-          <h1 className='text-2xl text-gray-400 ease-in-out duration-300 sm:text-4xl'>Nero Oghenekome</h1>
+      <div className='max-w-[1240px] mx-auto flex justify-between items-center px-6 py-4 gap-4 ease-in-out duration-300'>
+          <Link href='/'>
+            <h1 className='text-2xl text-gray-400 sm:text-4xl whitespace-nowrap'>Nero Oghenekome</h1>
           </Link>
-          <ul className='hidden sm:flex ease-in-out duration-300'>
+          <ul className='hidden sm:flex items-center gap-2'>
                <li>
                    <Link href='/'>
-                   <h1 className='font-mono text-amber-50 text-2xl p-4 hover:text-purple-400 cursor-grab ease-in-out duration-300'>Home</h1>
+                     <span className='font-mono text-amber-50 text-xl px-3 py-2 hover:text-purple-400 cursor-pointer transition-colors'>Home</span>
                    </Link>
                </li>
                <li>
                    <Link href='/#about'>
-                   <h1 className=' font-mono text-amber-50 text-2xl p-4  hover:text-purple-400 cursor-grab ease-in-out duration-300'>About</h1>
+                     <span className='font-mono text-amber-50 text-xl px-3 py-2 hover:text-purple-400 cursor-pointer transition-colors'>About</span>
                    </Link>
                </li>
                <li>
                    <Link href='/#skills'>
-                   <h1 className=' font-mono text-amber-50 text-2xl p-4  hover:text-purple-400 cursor-grab ease-in-out duration-300'>Skills</h1>
+                     <span className='font-mono text-amber-50 text-xl px-3 py-2 hover:text-purple-400 cursor-pointer transition-colors'>Skills</span>
                    </Link>
                </li>
                <li>
                    <Link href='/#projects'>
-                   <h1 className= ' font-mono text-amber-50 text-2xl p-4  hover:text-purple-400 cursor-grab ease-in-out duration-300'>Projects</h1>
+                     <span className='font-mono text-amber-50 text-xl px-3 py-2 hover:text-purple-400 cursor-pointer transition-colors'>Projects</span>
                    </Link>
                </li>
-          <li>
-               <Link href='/#contact'>
-               <h1 className=' font-mono text-amber-50 text-2xl p-4  hover:text-purple-400 cursor-grab ease-in-out duration-300'>Contact</h1>
-               </Link>
-          </li>
-      </ul>
-      <div className='block sm:hidden z-10 ease-in-out duration-300' onClick={toggleNav}>
-      <CiMenuBurger size={20} color='white' />
-      </div>
-      {navOpen && (
-         <div
-            className='absolute top-0 left-0 right-0 bottom-0 flex justify-center
-            items-center w-full h-screen bg-black text-center ease-in-out duration-300 sm:hidden'
+               <li>
+                   <Link href='/#contact'>
+                     <span className='font-mono text-amber-50 text-xl px-3 py-2 hover:text-purple-400 cursor-pointer transition-colors'>Contact</span>
+                   </Link>
+               </li>
+          </ul>
+          <a
+            href="https://drive.google.com/file/d/1ou7ISlZG4gFGjjEOVpTr7V5KQkCoFM7x/view?usp=sharing"
+            className="hidden sm:flex items-center border bg-green-300 text-white px-4 py-2 rounded-lg hover:bg-blue-300 transition-colors duration-200 font-medium"
+            target="_blank" rel="noopener noreferrer"
+          >
+            <span className='mr-2'>Download CV</span>
+            <FaDownload size={18} />
+          </a>
+          <div
+            className={`block sm:hidden z-10 transition-transform duration-300 ${navOpen ? 'rotate-90 scale-110' : ''}`}
+            onClick={toggleNav}
+              aria-label="Open navigation menu"
+              tabIndex={0}
+              role="button"
+            >
+              <CiMenuBurger size={24} color='white' />
+            </div>
+                    {/* Animate route navigation */}
+                    <style jsx global>{`
+                     html {
+                       scroll-behavior: smooth;
+                     }
+                    `}</style>
+      <div
+        className={`fixed inset-0 flex flex-col justify-center items-center w-full h-screen bg-black/95 text-center sm:hidden z-20 transition-all duration-500 ${
+          navOpen
+            ? 'opacity-100 pointer-events-auto scale-100'
+            : 'opacity-0 pointer-events-none scale-95'
+        }`}
+        style={{ backdropFilter: navOpen ? 'blur(2px)' : 'none' }}
+       // <-- Add this to close when overlay is clicked
          >
-            <ul>
-               <li>
-                  <Link href='/'>
-                  <h1 className='font-mono text-amber-50 p-4 text-4xl hover:text-gray-500 ease-in-out duration-300'>Home</h1>
-                  </Link>
-               </li>
-               <li>
-                  <Link href='/#about'>
-                  <h1 className=' font-mono text-amber-50 p-4 text-4xl
-                   hover:text-gray-500 ease-in-out duration-300'>About</h1>
-                  </Link>
-               </li>
-               <li>
-                  <Link href='/#skills'>
-                  <h1 className=' font-mono text-amber-50 p-4 text-4xl hover:text-gray-500 ease-in-out duration-300'>Skills</h1>
-                  </Link>
-               </li>
-               <li>
-                  <Link href='/#projects'>
-                  <h1 className= ' font-mono text-amber-50 p-4 text-4xl hover:text-gray-500 ease-in-out duration-300'>Projects</h1>
-                  </Link>
-               </li>
-               <li>
-                  <Link href='/#contact'>
-                  <h1 className= ' font-mono text-amber-50 p-4 text-4xl hover:text-gray-500 ease-in-out duration-300'>Contact</h1>
-                  </Link>
-                  
-               </li>
-               <li>
-                  <Link href='https://drive.google.com/file/d/1ou7ISlZG4gFGjjEOVpTr7V5KQkCoFM7x/view?usp=sharing'>
-                  <h1 className= ' font-mono text-amber-50 p-4 text-4xl hover:text-gray-500 ease-in-out duration-300'>CV</h1>
-                  </Link>
-                  
-               </li>
-            </ul>
-         </div>
-      )}
-      <a
-                href="https://drive.google.com/file/d/1ou7ISlZG4gFGjjEOVpTr7V5KQkCoFM7x/view?usp=sharing"
-                className="hidden sm:flex items-center border bg-green-300 text-white
-                  px-4 py-2 mr-2.5 rounded-lg hover:bg-blue-300 
-                  transition-colors duration-200 font-medium text-center ease-in-out"
-                  
+           {/* Close Icon */}
+           <button
+             className="absolute top-6 right-6 text-white text-3xl focus:outline-none"
+             onClick={toggleNav}
+             aria-label="Close navigation menu"
+           >
+             &times;
+           </button>
+           <ul
+             className={`space-y-6 transform transition-all duration-500 ${navOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}
+             onClick={e => e.stopPropagation()} // Prevent closing when clicking inside menu
+        >
+           <li>
+              <Link href='/' onClick={toggleNav}>
+                <span className='font-mono text-amber-50 text-3xl px-6 py-2 hover:text-purple-400 transition-colors duration-200 active:scale-95'>Home</span>
+              </Link>
+           </li>
+           <li>
+              <Link href='/#about' onClick={toggleNav}>
+                <span className='font-mono text-amber-50 text-3xl px-6 py-2 hover:text-purple-400 transition-colors duration-200 active:scale-95'>About</span>
+              </Link>
+           </li>
+           <li>
+              <Link href='/#skills' onClick={toggleNav}>
+                <span className='font-mono text-amber-50 text-3xl px-6 py-2 hover:text-purple-400 transition-colors duration-200 active:scale-95'>Skills</span>
+              </Link>
+           </li>
+           <li>
+              <Link href='/#projects' onClick={toggleNav}>
+                <span className='font-mono text-amber-50 text-3xl px-6 py-2 hover:text-purple-400 transition-colors duration-200 active:scale-95'>Projects</span>
+              </Link>
+           </li>
+           <li>
+              <Link href='/#contact' onClick={toggleNav}>
+                <span className='font-mono text-amber-50 text-3xl px-6 py-2 hover:text-purple-400 transition-colors duration-200 active:scale-95'>Contact</span>
+              </Link>
+           </li>
+           <li>
+              <a
+                href='https://drive.google.com/file/d/1ou7ISlZG4gFGjjEOVpTr7V5KQkCoFM7x/view?usp=sharing'
+                target="_blank" rel="noopener noreferrer"
+                onClick={toggleNav}
               >
-               <h1 className='text-center'>Download CV </h1>
-               <FaDownload size={20} />
+                <span className='font-mono text-amber-50 text-3xl px-6 py-2 hover:text-purple-400 transition-colors duration-200 active:scale-95'>CV</span>
               </a>
+           </li>
+        </ul>
       </div>
    </div>
-)
+   </div>
+  );
 }
 
 export default Navbar

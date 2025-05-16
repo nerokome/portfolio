@@ -3,7 +3,12 @@ import Heading from './Heading'
 
 const About = () => {
   return (
-    <div id='about' className='mb-12'>
+    <div
+      id='about'
+      className='mb-12'
+      data-aos='fade-up'
+      data-aos-duration='1000'
+    >
       <section className='flex flex-col items-center justify-center sm:flex-row'>
         <Heading title="About Me" />
         <div className=''></div>
