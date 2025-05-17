@@ -1,5 +1,5 @@
- 'use client'
- import React from 'react'
+"use client";
+import React from 'react'
 import Heading from './Heading'
 import { useRef, useEffect } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
@@ -39,7 +39,10 @@ const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 }
 }
-
+// const inputAnimation = {
+//   hidden: { opacity: 0, x: -40 },
+//   visible: { opacity: 1, x: 0 }
+// }
 const Projects = () => {
   const controls = useAnimation()
   const ref = useRef(null)

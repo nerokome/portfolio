@@ -7,8 +7,59 @@ const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false });
 
 const Hero = () => {
   return (
-    <div className='flex items-center justify-center text-white mb-80'>
-      <div className='container mx-auto px-4 mb-0 flex justify-between sm:flex items-center'>
+    <div className="relative flex items-center justify-center text-white mb-80 overflow-hidden">
+      {/* Animated Moving Shapes */}
+      <motion.div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{ width: '100%', height: '100%' }}
+      >
+        {/* Floating Circle 1 */}
+        <motion.div
+          className="absolute rounded-full bg-purple-400 opacity-40"
+          style={{ width: 180, height: 180, top: 40, left: 60 }}
+          animate={{
+            y: [0, 40, 0, -40, 0],
+            x: [0, 30, 0, -30, 0],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+        />
+        {/* Floating Circle 2 */}
+        <motion.div
+          className="absolute rounded-full bg-blue-400 opacity-30"
+          style={{ width: 120, height: 120, bottom: 80, right: 80 }}
+          animate={{
+            y: [0, -30, 0, 30, 0],
+            x: [0, -20, 0, 20, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: 'easeInOut',
+            delay: 2,
+          }}
+        />
+        {/* Floating Square */}
+        <motion.div
+          className="absolute bg-orange-300 opacity-20 rounded-lg"
+          style={{ width: 90, height: 90, top: 180, right: 120 }}
+          animate={{
+            y: [0, 25, 0, -25, 0],
+            x: [0, -15, 0, 15, 0],
+            rotate: [0, 20, 0, -20, 0],
+          }}
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: 'easeInOut',
+            delay: 1,
+          }}
+        />
+      </motion.div>
+      <div className='container mx-auto px-4 mb-0 flex justify-between sm:flex items-center z-10 relative'>
         <motion.div
           className='max-w-[450px] text-white flex flex-col gap-[40px] items-center lg:items-start'
           initial={{ opacity: 0, y: 40 }}
