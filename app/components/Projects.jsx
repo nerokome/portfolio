@@ -11,8 +11,8 @@ const Projects = () => {
       id='projects'
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.9, ease: 'easeOut' }}
-      viewport={{ once: true }}
+      transition={{ duration: 1, ease: 'easeOut' }}
+      viewport={{ once: false, amount: 0.1 }}
     >
       <section className='flex items-center justify-center py-10 sm:py-5'>
         <Heading title="Projects" />
