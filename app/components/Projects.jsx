@@ -10,9 +10,9 @@ const Projects = () => {
     <motion.div
       id='projects'
       initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 10, y: 5 }}
-      transition={{ duration: 2, ease: 'easeOut' }}
-      viewport={{ once: false, amount: 0.2 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, ease: 'easeOut' }}
+      viewport={{ once: true }}
     >
       <section className='flex items-center justify-center py-10 sm:py-5'>
         <Heading title="Projects" />

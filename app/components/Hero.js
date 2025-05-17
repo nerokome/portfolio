@@ -57,10 +57,7 @@ const Hero = () => {
             ease: 'easeInOut',
             delay: 1,
           }}
-          
         />
-        {/* Floating Rectangle */}
-        
       </motion.div>
       <div className='container mx-auto px-4 mb-0 flex justify-between sm:flex items-center z-10 relative'>
         <motion.div
