@@ -49,8 +49,8 @@ export default function Home() {
           ctx.globalAlpha = star.z;
           ctx.beginPath();
           ctx.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
-          ctx.fillStyle = 'blue';
-          ctx.shadowColor = 'blue';
+          ctx.fillStyle = '#fff';
+          ctx.shadowColor = '#fff';
           ctx.shadowBlur = 8;
           ctx.fill();
           ctx.restore();
