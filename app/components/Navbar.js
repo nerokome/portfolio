@@ -46,7 +46,7 @@ return (
                </li>
           </ul>
           <a
-            href="https://drive.google.com/file/d/1ou7ISlZG4gFGjjEOVpTr7V5KQkCoFM7x/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CIFVhet9BXzypocQ4JsYJuw_AWC-MhED/view?usp=drive_link"
             className="hidden sm:flex items-center border bg-green-300 text-white px-4 py-2 rounded-lg hover:bg-blue-300 transition-colors duration-200 font-medium"
             target="_blank" rel="noopener noreferrer"
           >
@@ -116,7 +116,7 @@ return (
            </li>
            <li>
               <a
-                href='https://drive.google.com/file/d/1ou7ISlZG4gFGjjEOVpTr7V5KQkCoFM7x/view?usp=sharing'
+                href='https://drive.google.com/file/d/1CIFVhet9BXzypocQ4JsYJuw_AWC-MhED/view?usp=drive_link'
                 target="_blank" rel="noopener noreferrer"
                 onClick={toggleNav}
               >
