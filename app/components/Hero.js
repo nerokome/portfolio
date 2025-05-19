@@ -72,11 +72,28 @@ const Hero = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <img
-              className='w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] rounded-full border-5 border-slate-500 mt-20 sm:flex justify-center items-center'
-              src="/Nero.jpg"
-              alt="Round image"
-            />
+            <div className="relative">
+              <img
+                className='w-[210px] h-[210px] sm:w-[250px] sm:h-[250px] rounded-full border-5 border-purple-500 mt-20 sm:flex justify-center items-center shadow-[0_0_20px_5px_rgba(168,85,247,0.5)] animate-glow'
+                src="/Nero.jpg"
+                alt="Round image"
+                style={{
+                  boxShadow: '0 0 20px 5px rgba(168,85,247,0.5), 0 0 40px 10px rgba(168,85,247,0.15)',
+                  borderColor: 'purple',
+                  animation: 'glow 2s ease-in-out infinite alternate'
+                }}
+              />
+              <style jsx>{`
+                @keyframes glow {
+                  0% {
+                    box-shadow: 0 0 20px 5px rgba(168,85,247,0.5), 0 0 40px 10px rgba(168,85,247,0.15);
+                  }
+                  100% {
+                    box-shadow: 0 0 30px 10px rgba(168,85,247,0.7), 0 0 60px 15px rgba(168,85,247,0.25);
+                  }
+                }
+              `}</style>
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
