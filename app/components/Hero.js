@@ -74,12 +74,12 @@ const Hero = () => {
           >
             <div className="relative">
               <img
-                className='w-[210px] h-[210px] sm:w-[250px] sm:h-[250px] rounded-full border-5 border-purple-500 mt-20 sm:flex justify-center items-center shadow-[0_0_20px_5px_rgba(168,85,247,0.5)] animate-glow'
+                className='w-[210px] h-[210px] sm:w-[250px] sm:h-[250px] rounded-full border-2 border-purple-300 mt-20 sm:flex justify-center items-center shadow-[0_0_20px_5px_rgba(168,85,247,0.5)] animate-glow'
                 src="/Nero.jpg"
                 alt="Round image"
                 style={{
                   boxShadow: '0 0 20px 5px rgba(168,85,247,0.5), 0 0 40px 10px rgba(168,85,247,0.15)',
-                  borderColor: 'purple',
+                  borderColor: '#d6bbfb', // light purple
                   animation: 'glow 2s ease-in-out infinite alternate'
                 }}
               />
