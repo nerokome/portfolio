@@ -20,6 +20,7 @@ const Skills = () => {
                 { img: "/Tail.png", label: "Tailwind CSS", animate: "" },
                 { img: "/flutter.png", label: "Dart", animate: "" },
                 { img: "/download.png", label: "Github", animate: "" },
+                { img: "/figma.png", label: "Figma", animate: "" },
         ];
 
         return (
