@@ -12,6 +12,7 @@ const Projects = () => {
       image: "/home.jpg",
       projectUrl: "https://nerochat-ovvk.vercel.app/",
       codeUrl: "https://github.com/nerokome/nerochat.git",
+      stack: "Dart Flutter|| Firebase Cloud|| Firestore",
     },
     {
       title: "EXPENSE TRACKER",
@@ -20,6 +21,7 @@ const Projects = () => {
       image: "/expense.jpg",
       projectUrl: "https://expense-sooty-nine.vercel.app/",
       codeUrl: "https://github.com/nerokome/Expense.git",
+      stack: "Next js|| Tailwind|| CSS Firebase",
     },
     {
       title: "CARTIER WATCHES",
@@ -28,6 +30,7 @@ const Projects = () => {
       image: "/shop.jpg",
       projectUrl: "https://nerogit.vercel.app/",
       codeUrl: "https://github.com/nerokome/nerogit.git",
+      stack: "Dart|| Flutter|| provider ",
     },
     {
       title: "MODERN HOME UI",
@@ -36,6 +39,7 @@ const Projects = () => {
       image: "/modern.jpg",
       projectUrl: "https://nerohome.vercel.app/",
       codeUrl: "https://github.com/nerokome/modern.git",
+      stack: "Dart|| Flutter ",
     },
     {
       title: "MINI REAL ESTATE SELECTOR",
@@ -50,6 +54,7 @@ Clicking on any apartment brings up a detailed view, showcasing a larger version
       image: "/apart.png",
       projectUrl: "https://mini-state.vercel.app/",
       codeUrl: "https://github.com/nerokome/ministate.git",
+      stack: "React.js|| Tailwind CSS|| Framer Motion",
     },
   ];
 
@@ -83,6 +88,9 @@ Clicking on any apartment brings up a detailed view, showcasing a larger version
             </h4>
             <p className="text-sm text-gray-900 text-center mb-4">
               {project.description}
+            </p>
+             <p className="text-lg font-mono font-bold text-sky-800 text-center mb-4">
+              {project.stack}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
