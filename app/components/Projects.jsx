@@ -55,7 +55,8 @@ const Projects = () => {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-slate-900 rounded-xl shadow-lg overflow-hidden p-4 flex flex-col items-center"
+            className="bg-gray-400 rounded-xl shadow-lg overflow-hidden border border-transparent 
+             shadow-gray-900/50 p-4 flex flex-col items-center"
           >
             <img
               className="w-full h-[250px] object-cover rounded-lg mb-4"
@@ -63,21 +64,21 @@ const Projects = () => {
               alt={project.title}
             />
             <h4 className="text-lg text-white text-center mb-2">
-              <span className="text-sky-300 font-semibold">{project.title}</span>
+              <span className="text-sky-800 font-semibold">{project.title}</span>
             </h4>
-            <p className="text-sm text-gray-300 text-center mb-4">
+            <p className="text-sm text-gray-900 text-center mb-4">
               {project.description}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={project.projectUrl}
-                className="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-pink-300 transition-colors duration-200 font-medium"
+                className="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-400 transition-colors duration-200 font-medium"
               >
                 View project
               </a>
               <a
                 href={project.codeUrl}
-                className="bg-purple-300 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors duration-200 font-medium"
+                className="bg-purple-300 text-white px-4 py-2 rounded-lg hover:bg-slate-200 transition-colors duration-200 font-medium"
               >
                 View code
               </a>
