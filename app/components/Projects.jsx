@@ -44,17 +44,15 @@ const Projects = () => {
     {
       title: "MINI REAL ESTATE SELECTOR",
       description: `The Mini Real Estate Floor Selector is a modern, interactive web prototype
-         built using React.js and Tailwind CSS, designed to simulate a high-rise real estate apartment exploration experience. The application enables users to visually navigate through towers, select specific floors, and examine available apartment layouts in a clean and responsive user interface.
+         built to design and simulate a high-rise real estate apartment exploration experience.
+          The application enables users to visually navigate through towers, select specific floors,
+          and examine available apartment layouts in a clean and responsive user interface.
 
-The user journey begins with a choice between three towers—Tower A, B, and C. Once a tower is selected, the user is presented with 15 selectable floors, arranged from top to bottom. Upon selecting a floor, the application displays four distinct apartment layouts, each featuring a realistic thumbnail image (fetched dynamically from Unsplash) and essential metadata such as area size, unit type (e.g., 2BHK), and room count.
-
-A key interaction highlight is the smooth hover and tap animation: when a user hovers over or taps an apartment card, the thumbnail subtly scales up and the background floor section darkens slightly, enhancing focus and user engagement. These transitions are optimized for both desktop and mobile experiences.
-
-Clicking on any apartment brings up a detailed view, showcasing a larger version of the layout image alongside full metadata. The system uses dynamic mock data generation, ensuring each of the 15 floors displays a unique set of apartment layouts.`,
+         The user journey begins with a choice between three towers—Tower A, B, and c`,
       image: "/apart.png",
       projectUrl: "https://mini-state.vercel.app/",
       codeUrl: "https://github.com/nerokome/ministate.git",
-      stack: "React.js|| Tailwind CSS|| Framer Motion",
+      stack: "React.js|| Tailwind CSS || Framer Motion",
     },
   ];
 
@@ -75,7 +73,7 @@ Clicking on any apartment brings up a detailed view, showcasing a larger version
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-gray-400 rounded-xl shadow-lg overflow-hidden border border-transparent 
+            className="bg-slate-800 rounded-xl shadow-lg overflow-hidden border border-transparent 
              shadow-gray-900/50 p-4 flex flex-col items-center"
           >
             <img
@@ -84,18 +82,18 @@ Clicking on any apartment brings up a detailed view, showcasing a larger version
               alt={project.title}
             />
             <h4 className="text-lg text-white text-center mb-2">
-              <span className="text-sky-800 font-semibold">{project.title}</span>
+              <span className="text-sky-500 font-semibold">{project.title}</span>
             </h4>
-            <p className="text-sm text-gray-900 text-center mb-4">
+            <p className="text-sm text-gray-400 text-center mb-4">
               {project.description}
             </p>
-             <p className="text-lg font-mono font-bold text-sky-800 text-center mb-4">
+             <p className="text-lg font-mono font-bold text-sky-500 text-center mb-4">
               {project.stack}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={project.projectUrl}
-                className="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-400 transition-colors duration-200 font-medium"
+                className="bg-black text-white px-4 py-2 rounded-lg hover:bg-slate-400 transition-colors duration-200 font-medium"
               >
                 View project
               </a>
