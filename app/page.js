@@ -114,9 +114,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       
-      <header className="relative z-10">
-        <Navbar/>
-      </header>
+      
       <main className="relative z-20">
         <div className=''>
           <Hero/>
