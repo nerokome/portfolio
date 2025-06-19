@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <div className="fixed top-0 left-0 w-full z-50">
           <Navbar />
         </div>
-        <div className="pt-16">
+        <div className="pt-25">
           {children}
         </div>
       </body>

@@ -28,7 +28,7 @@ const Skills = () => {
                         <section className='flex items-center justify-center'>
                                 <Heading title="Technical Skills" />
                         </section>
-                        <div className='grid grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 px-10 gap-6  justify-center'>
+                        <div className='grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 px-10 gap-6  justify-center'>
                                 {skills.map((skill, idx) => (
                                         <div
                                                 key={skill.label}

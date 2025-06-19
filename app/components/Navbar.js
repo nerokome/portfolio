@@ -35,8 +35,8 @@ const Navbar = () => {
     <nav>
       <div className={`left-0 top-0 w-full z-10 ease-in-out duration-300 ${navOpen ? 'h-screen overflow-hidden' : ''}`}></div>
 
-      <div className={`max-w-[1240px] mx-auto flex justify-between items-center px-6 py-4 gap-4 ease-in-out duration-300
-        ${navBg ? 'bg-slate-900 backdrop-blur-md shadow-lg' : 'bg-transparent'}
+      <div className={`w-full mx-auto flex justify-between items-center px-6 py-4 gap-4 ease-in-out duration-300
+        ${navBg ? 'bg-slate-900 backdrop-blur-lg shadow-lg' : 'bg-transparent'}
         fixed left-1/2 -translate-x-1/2 top-0 w-full`}>
         
         <Link href='/'>
