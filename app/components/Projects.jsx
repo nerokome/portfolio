@@ -54,6 +54,17 @@ const Projects = () => {
       codeUrl: "https://github.com/nerokome/ministate.git",
       stack: "React.js|| Tailwind CSS || Framer Motion",
     },
+     {
+      title: "MUSIC CRYPTO BLOCKCHAIN",
+      description: `vibrant fusion of blockchain innovation and musical creativity. Designed to empower artists, 
+      listeners, and developers, it’s a decentralized platform where music meets Web3. Users can explore NFT music drops, access open-source tools,
+       and connect with a global community of creators.
+       With a playful, futuristic interface and dynamic features, the app makes crypto feel fun and music feel empow`,
+      image: "/crypto.jpg",
+      projectUrl: "https://music-two-drab.vercel.app/",
+      codeUrl: "https://github.com/nerokome/music",
+      stack: "React.js|| Tailwind CSS || Framer Motion",
+    },
   ];
 
 
